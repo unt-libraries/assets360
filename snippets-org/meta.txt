@@ -1,0 +1,17 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700" media="all">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" media="all">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" media="all">
+<link href="//iii.library.unt.edu/screens/ejfiles/201701/template.css" rel="stylesheet" type="text/css" />
+<link href="//iii.library.unt.edu/screens/ejfiles/201701/ej-styles.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="//iii.library.unt.edu/screens/fancybox213/jquery.fancybox.css" type="text/css" media="screen" />
+<!-- HTML5 element support for IE6-8 -->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="//iii.library.unt.edu/screens/ejfiles/jquery-ui-1.8.20.custom.min.js"></script>
+<script type="text/javascript" src="//iii.library.unt.edu/screens/ejfiles/201701/script.js"></script>
+<script type="text/javascript" src="//iii.library.unt.edu/screens/bootstrap.min.js"></script>
+<script type="text/javascript" src="//iii.library.unt.edu/screens/fancybox214/jquery.fancybox.pack.js"></script>
