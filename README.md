@@ -19,11 +19,11 @@ Since we can't&mdash;and shouldn't&mdash;change the network to put our externall
 ## Usage
 Whatever is on the `master` branch reflects what is currently in production.
 
-The [snippets](https://github.com/unt-libraries/assets360/snippets/) directory contains the HTML code that is in the Admin Console for the 360 products and references some of the assets contained in the repository. 
+The [snippets](https://github.com/unt-libraries/assets360/tree/master/snippets/) directory contains the HTML code that is in the Admin Console for the 360 products and references some of the assets contained in the repository. 
 
-* https://github.com/unt-libraries/assets360/snippets/meta.txt &mdash; Advanced Settings / Head
-* https://github.com/unt-libraries/assets360/snippets/header.html &mdash; Branding / Header
-* https://github.com/unt-libraries/assets360/snippets/footer.html &mdash; Branding / Footer
+* [snippets/meta.txt](https://github.com/unt-libraries/assets360/tree/master/snippets/meta.txt) &mdash; Advanced Settings / Head
+* [snippets/header.html](https://github.com/unt-libraries/assets360/tree/master/snippets/header.html) &mdash; Branding / Header
+* [snippets/footer.html](https://github.com/unt-libraries/assets360/tree/master/snippets/footer.html) &mdash; Branding / Footer
 
 ### If You Need to Make Changes...
 
@@ -46,7 +46,7 @@ If your changes are more involved, where you need to make changes to the HTML in
 4. Preview and develop as needed until you get it working.
 5. Merge your new branch with `master`, but don't delete your dev branch yet. (In this case, when you merge, since you didn't modify any of the pre-existing files, your changes don't go live yet.)
 6. Go back to the HTML snippets in the 360 Admin Console. Update references to your new files to point to the `github.io` versions of those files, which should be available now since you've merged your new branch into `master`. Preview your changes again to make sure everything is still working.
-7. Now open up the [meta.txt](https://github.com/unt-libraries/assets360/snippets/meta.txt), [header.html](https://github.com/unt-libraries/assets360/snippets/header.html), and [footer.html](https://github.com/unt-libraries/assets360/snippets/footer.html) files on your development branch and copy/paste from the Admin Console into whichever snippets you changed.
+7. Now open up the [meta.txt](https://github.com/unt-libraries/assets360/tree/master/snippets/meta.txt), [header.html](https://github.com/unt-libraries/assets360/tree/master/snippets/header.html), and [footer.html](https://github.com/unt-libraries/assets360/tree/master/snippets/footer.html) files on your development branch and copy/paste from the Admin Console into whichever snippets you changed.
 8. Merge these changes into `master`. (Still keep your dev branch available.)
 9. Now you just have to wait a day. When the data refresh happens, your updated HTML snippets in the Admin Console will go live. The live site will now be referencing the new versions of the asset files that you created instead of the versions that were live the previous day.
 10. On your development branch, delete the old versions of the asset files that just became obsolete.
