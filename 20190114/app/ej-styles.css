@@ -8,7 +8,7 @@ p {margin-top: 1em; margin-bottom: 1em;}
 #content input[type="checkbox"] {height:initial;}
 #content a.btn {padding: 5px 20px; vertical-align: top; height: 35px;}
 #content a.btn-success {color: #fff !important;}
-#content {font-family:-apple-system,BlinkMacSystemFont,Open Sans,Segoe UI,Roboto,Helvetica Neue,Verdana,sans-serif;, border-left:1px solid #ccc; border-right:1px solid #ccc; padding: 10px 0;}
+#content {font-family:-apple-system,BlinkMacSystemFont,Open Sans,Segoe UI,Roboto,Helvetica Neue,Verdana,sans-serif; border-left:1px solid #ccc; border-right:1px solid #ccc; padding: 10px 0;}
 #content p {line-height:1.5em;}
 #content > * {padding: 0 20px;}
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6, .SS_ToolLabels, .SS_ToolLabels * {font-family:Oswald,Helvetica Neue,Helvetica,Arial,sans-serif !important;}
@@ -39,7 +39,7 @@ div.topNavContainer {width:100%;}
 .SS_ResultsAtoZLinks a:first-child {border: 0; padding-left:0;}
 
 .SS_SearchToolsGroup {padding: 10px 10px 15px 10px !important; border-bottom: 1px solid #CCC; margin-bottom: 15px; background: url('//iii.library.unt.edu/screens/tile_search.jpg') repeat-x bottom left;}
-.SS_ResultsNoteGroup {background-color: #E7FEEA; display: block; height: 1.5em; margin-bottom: -10px;}
+.SS_ResultsNoteGroup {background-color: #E7FEEA; display: block; height: 1.5em; margin-bottom: -10px; text-align:center;}
 .SS_LetterLinks {clear: both;}
 .SS_LetterLinks {width: 100%; text-align: center;}
 .SS_LetterLinks nobr {font-size: .9em;}
@@ -77,7 +77,7 @@ div.find-it {font-weight:bold;}
 
 /* Mobile Support */
 @media only screen and (max-width:767px) {
-  SS_SearchToolsGroup {display: none;}
+  .SS_SearchToolsGroup {display: none;}
   #content input, #content select, #content a.btn {width: 100%; margin:2px 0;}
   #content form {padding: 10px 0;}
   .topNavigation {padding:0 10px 15px 10px; text-align:center;}
