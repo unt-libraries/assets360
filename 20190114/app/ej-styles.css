@@ -1,23 +1,29 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* Generic global styles */
 * {padding: 0; margin: 0;}
 p {margin-top: 1em; margin-bottom: 1em;}
+input, select {height: 35px; border: 1px solid #ccc; padding: 3px; background-color: #FFF;}
+input[type="checkbox"] {height:initial;}
+#content * { font-family:-apple-system,BlinkMacSystemFont,Open Sans,Segoe UI,Roboto,Helvetica Neue,Verdana,sans-serif !important; }
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6, .SS_ToolLabels, .SS_ToolLabels * {font-family:Oswald,Helvetica Neue,Helvetica,Arial,sans-serif !important;}
 
-#content * { font-family:-apple-system,BlinkMacSystemFont,Open Sans,Segoe UI,Roboto,Helvetica Neue,Verdana,sans-serif; }
-#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {font-family:Oswald,Helvetica Neue,Helvetica,Arial,sans-serif;}
 
+/* Specific fixes for SS styles */
+.SS_PageBody br, .SS_CopyRightStatement, .SS_SkipNavigationLinks, .SS_EJPPreContentHorizontalRules , .SS_HorizontalRules, .SS_EJPPreCopyrightHorizontalRules , .SS_searchTitle , #JournalLinkTable caption {display: none !important;}
+
+/* Other Styling */
 #content ul, .findWhatSearch ul {margin: 5px 0 5px 40px;}
 #content ul ul, .findWhatSearch ul ul {margin-left: 30px;}
 #content li, .findWhatSearch  li {margin-top: 2px;}
 a img {border:0;}
 #content-container {width:100% !important; background-color:#fff;}
-#content > * {padding: 0 10px;}
-#content * {line-height: 1.35em;}
+#content * {line-height: inherit;}
 #content, div.topNavigation {max-width:1100px; margin-left:auto; margin-right:auto;}
-#content {border-left:1px solid #ccc; border-right:1px solid #ccc; padding-bottom:8px;}
+#content {border-left:1px solid #ccc; border-right:1px solid #ccc; padding: 10px 30px;}
 #content p {line-height:1.5em;}
-div.topNavContainer {width:100%; float:left;}
+div.topNavContainer {width:100%;}
 .topNavigation {width:100%; margin: 30px 0 15px 0; padding: 0 60px; max-width: 1190px !important;}
 .topNavigation ul {float: left; list-style: none; margin:30px -110px 0 -110px;}
 .topNavigation ul li {padding: 0 8px 2px 8px; border-left: 1px dotted #cacaca; margin-left: 5px;}
@@ -25,7 +31,12 @@ div.topNavContainer {width:100%; float:left;}
 .cat-topNav-item {float:left; padding:0 5px; margin-right:10px;}
 .cat-topNav-item i {text-decoration: none; padding-right: 5px;}
 .topNavigation select[name='HISTORY'] {float: right; font-size: .9em; width:200px;}
-.SS_CopyRightStatement, .SS_SkipNavigationLinks, .SS_EJPPreContentHorizontalRules , .SS_HorizontalRules, .SS_EJPPreCopyrightHorizontalRules , .SS_searchTitle , #JournalLinkTable caption {display: none !important;}
+
+.SS_ToolLabels {font-size: 1.1em; text-transform: uppercase; font-weight: bold;}
+.SS_EJPMainCell > div {margin: 0 10px 40px 10px;}
+.SS_ResultsAtoZLinks a {font-size: .9em; border-left: 1px solid #666; padding-left: 8px;}
+.SS_ResultsAtoZLinks a:first-child {border: 0;}
+
 .SS_SearchToolsGroup {padding: 10px 10px 15px 10px !important; border-bottom: 1px solid #CCC; margin-bottom: 15px; background: url('//iii.library.unt.edu/screens/tile_search.jpg') repeat-x bottom left;}
 .SS_ResultsNoteGroup {background-color: #E7FEEA; display: block; height: 1.5em; margin-bottom: 10px;}
 .SS_LetterLinks {clear: both;}
