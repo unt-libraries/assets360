@@ -3,11 +3,11 @@ and them show them again during document ready, so we don't get the weird
 "jump" */
 
 if (navigator.userAgent.match(/MSIE/)) {
-  document.styleSheets[0].addRule("#quick-access-block-wrap", "display:none");
+  document.styleSheets[0].addRule("#content", "display:none");
 } else {
 	for (var i=0; i<document.styleSheets.length; i++) {
 		if (typeof(document.styleSheets[i].href) === "string" && document.styleSheets[i].href.match(/\/ThemeDefault.css/)) {
-			document.styleSheets[i].insertRule("#quick-access-block-wrap {display:none;}", 1);
+			document.styleSheets[i].insertRule("#content {display:none;}", 1);
 		}
 	}
 }
@@ -115,7 +115,8 @@ $(document).ready(function(){
 			}
 			$(this).parent().attr("align", "left").attr("width", "");
 		});
-		
+    
+    $("#content").show();		
 	}
 	
 });
