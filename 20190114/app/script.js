@@ -15,6 +15,47 @@ if (navigator.userAgent.match(/MSIE/)) {
 $(document).ready(function(){
 	// First get rid of .no-js class
 	$("#page-wrap").removeClass("no-js");
+  
+  // ***** BUTTONS
+  
+  // Define behavior of search spinner for search/submit buttons ...
+  var do_spinner = function(el) {
+    var spinner = $('<i class="fal fa-sync fa-spin"></i>');
+    el.addClass("disabled");
+    el.find("i").replaceWith(spinner);
+  }
+	
+	// Define function to add spinner behavior on submission of search forms ...
+  var add_submit_behavior = function(form_sel, button_sel) {
+    var form_el = $(form_sel);
+    var button_el = $(button_sel);
+    if (button_el.length && form_el.length) {
+      button_el.on('click', function(ev) {
+        ev.preventDefault();
+        form_el.submit();
+      });
+      form_el.on('submit', function() {
+        do_spinner(button_el);
+        return true;
+      });
+    }
+  }
+  
+  // Find all search buttons on any screen ... 
+  var possible_search_btns = ["input:submit[value='Search']"];
+  var search_btn;
+  possible_search_btns.forEach(function(selector) {
+    if (!search_btn && $(selector).length) {
+      search_btn = $(selector);
+    }
+  });
+  
+  // Set standard HTML and behavior for the search button.
+  if (search_btn) {
+    var new_btn = $('<a id="formSubmit" class="submitLinkButton btn btn-success" href="#"><i class="fa fa-search"></i> Search</a>');
+    search_btn.replaceWith(new_btn);
+    add_submit_behavior(new_btn.parents("form"), new_btn);
+  }
 	
 	// Modifications for journal citation display
 	if ($("#CitationResults").length) {
