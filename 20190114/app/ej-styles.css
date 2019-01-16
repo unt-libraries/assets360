@@ -6,7 +6,9 @@
 p {margin-top: 1em; margin-bottom: 1em;}
 input, select {height: 35px; border: 1px solid #ccc; padding: 3px; background-color: #FFF;}
 input[type="checkbox"] {height:initial;}
-#content * { font-family:-apple-system,BlinkMacSystemFont,Open Sans,Segoe UI,Roboto,Helvetica Neue,Verdana,sans-serif !important; }
+a.btn {padding: 5px 20px; vertical-align: top; height: 35px;}
+a.btn-success {color: #fff !important;}
+#content {font-family:-apple-system,BlinkMacSystemFont,Open Sans,Segoe UI,Roboto,Helvetica Neue,Verdana,sans-serif;}
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6, .SS_ToolLabels, .SS_ToolLabels * {font-family:Oswald,Helvetica Neue,Helvetica,Arial,sans-serif !important;}
 
 

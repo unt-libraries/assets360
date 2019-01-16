@@ -51,11 +51,11 @@ $(document).ready(function(){
   });
   
   // Set standard HTML and behavior for the search button.
-  if (search_btn) {
-    var new_btn = $('<a id="formSubmit" class="submitLinkButton btn btn-success" href="#"><i class="fa fa-search"></i> Search</a>');
-    search_btn.replaceWith(new_btn);
+  $(search_btn).each(function() {
+    var new_btn = $('<a class="submitLinkButton btn btn-success" href="#"><i class="fa fa-search"></i> Search</a>');
+    $(this).replaceWith(new_btn);
     add_submit_behavior(new_btn.parents("form"), new_btn);
-  }
+  });
 	
 	// Modifications for journal citation display
 	if ($("#CitationResults").length) {
