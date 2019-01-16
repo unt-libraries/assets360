@@ -9,6 +9,7 @@ input[type="checkbox"] {height:initial;}
 a.btn {padding: 5px 20px; vertical-align: top; height: 35px;}
 a.btn-success {color: #fff !important;}
 #content {font-family:-apple-system,BlinkMacSystemFont,Open Sans,Segoe UI,Roboto,Helvetica Neue,Verdana,sans-serif;}
+#content > * {padding: 0 20px;}
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6, .SS_ToolLabels, .SS_ToolLabels * {font-family:Oswald,Helvetica Neue,Helvetica,Arial,sans-serif !important;}
 .SS_PageBody br, .SS_CopyRightStatement, .SS_SkipNavigationLinks, .SS_EJPPreContentHorizontalRules , .SS_HorizontalRules, .SS_EJPPreCopyrightHorizontalRules , .SS_searchTitle , #JournalLinkTable caption {display: none !important;}
 
@@ -32,7 +33,7 @@ div.topNavContainer {width:100%;}
 .topNavigation select[name='HISTORY'] {float: right; font-size: .9em; width:200px;}
 
 .SS_ToolLabels {font-size: 1.1em; text-transform: uppercase; font-weight: bold;}
-.SS_EJPTable {margin: 0 30px;}
+.SS_PageBody {margin: 0 10px;}
 .SS_EJPMainCell > div {margin: 0 10px 40px 10px;}
 .SS_ResultsAtoZLinks a {font-size: .9em; border-left: 1px solid #666; padding-left: 8px;}
 .SS_ResultsAtoZLinks a:first-child {border: 0; padding-left:0;}
