@@ -8,7 +8,8 @@ p {margin-top: 1em; margin-bottom: 1em;}
 #content input[type="checkbox"] {height:initial;}
 #content a.btn {padding: 5px 20px; vertical-align: top; height: 35px;}
 #content a.btn-success {color: #fff !important;}
-#content, body, div, p, span, td {font-family:-apple-system,BlinkMacSystemFont,Open Sans,Segoe UI,Roboto,Helvetica Neue,Verdana,sans-serif; border-left:1px solid #ccc; border-right:1px solid #ccc; padding: 10px 0;}
+#content, body, div, p, span, td {font-family:-apple-system,BlinkMacSystemFont,Open Sans,Segoe UI,Roboto,Helvetica Neue,Verdana,sans-serif;}
+#content {border-left:1px solid #ccc; border-right:1px solid #ccc; padding: 10px 0;}
 #content p {line-height:1.5em;}
 #content > * {padding: 0 20px;}
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6, .SS_ToolLabels, .SS_ToolLabels * {font-family:Oswald,Helvetica Neue,Helvetica,Arial,sans-serif !important;}
