@@ -60,6 +60,7 @@ $(document).ready(function(){
 	// Modifications for journal citation display
 	if ($("#CitationResults").length) {
 		$("#CitationResults").prepend("<h2>Get the Full Text</h2>");
+    $("#CitationResults").prev("p").remove();
     // Custom links table
 		var lib_search_link = $("span.CustomLinkGroupLabel:contains('UNT Library Catalog Search')").parents("table").eq(0).find("td.CustomLinkGroup a");
 		lib_search_link.text("Check the UNT Library Catalog");
@@ -89,7 +90,7 @@ $(document).ready(function(){
 		$("#ArticleCL").each(function() {
 			if ($.trim($(this).text())) {
         article_findit = true;
-        var findit_html = "<img src=\"//unt-libraries.github.io/assets360/img/find-it-round.png\" alt=\"FIND IT\" /> Go to Article";
+        var findit_html = "<img src=\"//unt-libraries.github.io/assets360/20190114/assets/images/find-it-round.png\" alt=\"FIND IT\" /> Go to Article";
         $(this).find("a").html(findit_html);
         $(this).addClass("find-it");
         $(this).parent().attr("align", "left").attr("width", "25%");
@@ -100,7 +101,7 @@ $(document).ready(function(){
 		$("#JournalCL").each(function() {
       var journal_html = "Go to Journal";
       if (!article_findit) {
-        var journal_html = "<img src=\"//unt-libraries.github.io/assets360/img/find-it-round.png\" alt=\"FIND IT\" /> " + journal_html;
+        var journal_html = "<img src=\"//unt-libraries.github.io/assets360/20190114/assets/images/find-it-round.png\" alt=\"FIND IT\" /> " + journal_html;
         $(this).addClass("find-it");
         $(this).parent().attr("width", "25%");
       }

@@ -8,7 +8,7 @@ p {margin-top: 1em; margin-bottom: 1em;}
 #content input[type="checkbox"] {height:initial;}
 #content a.btn {padding: 5px 20px; vertical-align: top; height: 35px;}
 #content a.btn-success {color: #fff !important;}
-#content {font-family:-apple-system,BlinkMacSystemFont,Open Sans,Segoe UI,Roboto,Helvetica Neue,Verdana,sans-serif; border-left:1px solid #ccc; border-right:1px solid #ccc; padding: 10px 0;}
+#content, body, div, p, span, td {font-family:-apple-system,BlinkMacSystemFont,Open Sans,Segoe UI,Roboto,Helvetica Neue,Verdana,sans-serif; border-left:1px solid #ccc; border-right:1px solid #ccc; padding: 10px 0;}
 #content p {line-height:1.5em;}
 #content > * {padding: 0 20px;}
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6, .SS_ToolLabels, .SS_ToolLabels * {font-family:Oswald,Helvetica Neue,Helvetica,Arial,sans-serif !important;}
@@ -55,10 +55,10 @@ div.topNavContainer {width:100%;}
 table.CandyWrapper {width: 100% !important;}
 .SS_ContentHeading {font-weight: normal;}
 #JournalLinkTable * {font-size: 100% !important;}
-#CitationResults {padding-top: 7px; width: 100%;}
-#CitationResults h2 {margin: 0; padding-top: 15px; font-size: 1.3em; border-bottom: 1px solid #CCC;}
-#CitationResults h3 {margin: 0; padding-top: 15px; font-size: 1.1em; font-weight: bold;}
-#CitationResults h4 {border-top: 1px solid #ddd; padding: 10px 0 0 15px; margin-top: 10px; color: #444; font-style: italic;}
+#CitationResults {width: 100%; padding:0 30px 10px 30px; margin-top:0; top:0;}
+#CitationResults h2 {margin: 0; font-size: 1.5em; border-bottom: 1px solid #CCC; font-weight:bold;}
+#CitationResults h3 {margin: 0; padding-top: 15px; font-size: 1.3em; font-weight: bold;}
+#CitationResults h4 {border-top: 1px solid #ddd; padding-top: 5px; font-size: 1.2em; margin-top: 10px; color: #444;}
 div.find-it {font-weight:bold;}
 #CitationResults table.CustomLinkTable table {float: left !important; width: 220px; clear: none; border-right: 1px dotted #ddd; padding-left: 20px;}
 #CitationResults .CustomLinkGroupLabel {font-weight:normal;}
@@ -78,6 +78,7 @@ div.find-it {font-weight:bold;}
 /* Mobile Support */
 @media only screen and (max-width:767px) {
   .SS_SearchToolsGroup {display: none;}
+  #content {padding-top: 0;}
   #content input, #content select, #content a.btn {width: 100%; margin:2px 0;}
   #content form {padding: 10px 0;}
   .topNavigation {padding:0 10px 15px 10px; text-align:center;}
