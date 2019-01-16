@@ -4,10 +4,10 @@
 /* Generic global styles */
 * {padding: 0; margin: 0;}
 p {margin-top: 1em; margin-bottom: 1em;}
-input, select {height: 35px; border: 1px solid #ccc; padding: 3px; background-color: #FFF;}
-input[type="checkbox"] {height:initial;}
-a.btn {padding: 5px 20px; vertical-align: top; height: 35px;}
-a.btn-success {color: #fff !important;}
+#content input, select {height: 35px; border: 1px solid #ccc; padding: 3px; background-color: #FFF;}
+#content input[type="checkbox"] {height:initial;}
+#content a.btn {padding: 5px 20px; vertical-align: top; height: 35px;}
+#content a.btn-success {color: #fff !important;}
 #content {font-family:-apple-system,BlinkMacSystemFont,Open Sans,Segoe UI,Roboto,Helvetica Neue,Verdana,sans-serif;, border-left:1px solid #ccc; border-right:1px solid #ccc; padding: 10px 0;}
 #content p {line-height:1.5em;}
 #content > * {padding: 0 20px;}
@@ -75,3 +75,16 @@ div.find-it {font-weight:bold;}
 .linkGroup .type_sprite {display: block; overflow: hidden; padding-bottom: 0px; background-image: url(//iii.library.unt.edu/screens/types-sprites.png); background-repeat: no-repeat; background-position: 0 0; width: 27px; height: 36px; float: left;}
 .linkGroup p {margin-bottom: 1em; border-bottom: 1px solid #E2E2E2; line-height: 1.5em !important;}
 
+/* Mobile Support */
+@media only screen and (max-width:767px) {
+  SS_SearchToolsGroup {display: none;}
+  #content input, #content select, #content a.btn {width: 100%; margin:2px 0;}
+  #content form {padding: 10px 0;}
+  .topNavigation {padding:0 10px 15px 10px; text-align:center;}
+  .topNavigation a.cat-topNav-item {width:100%; background-color:#00853e; color:#fff; padding:5px; margin:2px 0; line-height: 1.9em;}
+  .topNavigation a.cat-topNav-item:hover {text-decoration:none; background-color:#444;}
+  .topNavigation ul {margin:0; padding:0 10px 5px 15px; width:100%;}
+  .topNavigation ul li {margin:0; padding:0; border:0;}
+  .topNavigation ul li a {display: block; color:#000; background-color:#72b844; margin:3px 0; padding:4px 5px;}
+  .topNavigation ul li a:hover {text-decoration:none; background-color:#444; color:#fff;}
+}
