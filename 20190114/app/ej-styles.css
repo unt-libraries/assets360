@@ -8,10 +8,12 @@ input, select {height: 35px; border: 1px solid #ccc; padding: 3px; background-co
 input[type="checkbox"] {height:initial;}
 a.btn {padding: 5px 20px; vertical-align: top; height: 35px;}
 a.btn-success {color: #fff !important;}
-#content {font-family:-apple-system,BlinkMacSystemFont,Open Sans,Segoe UI,Roboto,Helvetica Neue,Verdana,sans-serif;}
+#content {font-family:-apple-system,BlinkMacSystemFont,Open Sans,Segoe UI,Roboto,Helvetica Neue,Verdana,sans-serif;, border-left:1px solid #ccc; border-right:1px solid #ccc; padding: 10px 0;}
+#content p {line-height:1.5em;}
 #content > * {padding: 0 20px;}
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6, .SS_ToolLabels, .SS_ToolLabels * {font-family:Oswald,Helvetica Neue,Helvetica,Arial,sans-serif !important;}
-.SS_PageBody br, .SS_CopyRightStatement, .SS_SkipNavigationLinks, .SS_EJPPreContentHorizontalRules , .SS_HorizontalRules, .SS_EJPPreCopyrightHorizontalRules , .SS_searchTitle , #JournalLinkTable caption {display: none !important;}
+#content a:link, #content a:visited {color: #014184;}
+.SS_PageBody br, .SS_SearchResultsCount, .SS_CopyRightStatement, .SS_SkipNavigationLinks, .SS_EJPPreContentHorizontalRules , .SS_HorizontalRules, .SS_EJPPreCopyrightHorizontalRules , .SS_searchTitle , #JournalLinkTable caption {display: none !important;}
 
 /* Other Styling */
 #content ul, .findWhatSearch ul {margin: 5px 0 5px 40px;}
@@ -21,8 +23,6 @@ a img {border:0;}
 #content-container {width:100% !important; background-color:#fff;}
 #content * {line-height: inherit;}
 #content, div.topNavigation {max-width:1100px; margin-left:auto; margin-right:auto;}
-#content {border-left:1px solid #ccc; border-right:1px solid #ccc; padding: 10px 0;}
-#content p {line-height:1.5em;}
 div.topNavContainer {width:100%;}
 .topNavigation {width:100%; margin: 30px 0 15px 0; padding: 0 60px; max-width: 1190px !important;}
 .topNavigation ul {float: left; list-style: none; margin:30px -110px 0 -110px;}
@@ -39,9 +39,14 @@ div.topNavContainer {width:100%;}
 .SS_ResultsAtoZLinks a:first-child {border: 0; padding-left:0;}
 
 .SS_SearchToolsGroup {padding: 10px 10px 15px 10px !important; border-bottom: 1px solid #CCC; margin-bottom: 15px; background: url('//iii.library.unt.edu/screens/tile_search.jpg') repeat-x bottom left;}
-.SS_ResultsNoteGroup {background-color: #E7FEEA; display: block; height: 1.5em; margin-bottom: 10px;}
+.SS_ResultsNoteGroup {background-color: #E7FEEA; display: block; height: 1.5em; margin-bottom: -10px;}
 .SS_LetterLinks {clear: both;}
-#content a:link {color: #014184;}
+.SS_LetterLinks {width: 100%; text-align: center;}
+.SS_LetterLinks nobr {font-size: .9em;}
+.SS_LetterLinks nobr:first-child, .SS_LetterLinks nobr:last-child {font-size: 1em;}
+.SS_LetterLinks nobr:first-child a, .SS_LetterLinks nobr:last-child a {margin: 0 10px;}
+
+
 #nonav {border-top: 1px solid #CCC;}
 .SS_HoldingsList {margin-bottom: 10px; border-bottom: 1px solid #CCC; padding-bottom: 20px !important;}
 .SS_CategorySelector {margin-top: 5px;}
