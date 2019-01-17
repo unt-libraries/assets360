@@ -2,17 +2,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,800|Oswald&amp;subset=latin-ext">
-<link rel="stylesheet" type="text/css" href="https://gitcdn.link/repo/unt-libraries/assets360/v2.0.0/20190114/assets/styles/unt.min.css" />
+<link rel="stylesheet" type="text/css" href="https://gitcdn.link/repo/unt-libraries/assets360/v2.0.1/assets/styles/unt.min.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-POYwD7xcktv3gUeZO5s/9nUbRJG/WOmV6jfEGikMJu77LGYO8Rfs2X7URG822aum" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" integrity="sha256-HtCCUh9Hkh//8U1OwcbD8epVEUdBvuI8wj1KtqMhNkI=" crossorigin="anonymous" />
 
 <style>
   .wrapper--content {
-    background-image: url(https://gitcdn.link/repo/unt-libraries/assets360/v2.0.0/20190114/assets/images/backgrounds/default.jpg);
+    background-image: url(https://gitcdn.link/repo/unt-libraries/assets360/v2.0.1/assets/images/backgrounds/default.jpg);
   }    
 </style>
 
-<link href="https://gitcdn.link/repo/unt-libraries/assets360/v2.0.0/20190114/app/ej-styles.css" rel="stylesheet" type="text/css" />
+<link href="https://gitcdn.link/repo/unt-libraries/assets360/v2.0.1/app/ej-styles.css" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript" src="//www.google.com/jsapi?key=ABQIAAAAiMxCv9HXrrInCAfSSpXWKRS4VKaM75tmZ4wb9-H0O7KcTd3lvhQLPHVYN2ZwWVF49EC3OQ0UAulV_w"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -25,14 +25,14 @@
         integrity="sha256-VCsWOz+0GuHdS/sIICtQNTFJdbaDI80rxvoB7BXabrU=" 
         crossorigin="anonymous"></script>
 
-<script type="text/javascript" src="https://gitcdn.link/repo/unt-libraries/assets360/v2.0.0/20190114/app/script.js"></script>
-<script src="https://gitcdn.link/repo/unt-libraries/assets360/v2.0.0/20190114/assets/scripts/lazysizes.min.js"></script>
-<script src="https://gitcdn.link/repo/unt-libraries/assets360/v2.0.0/20190114/assets/scripts/unt.min.js"></script>
+<script type="text/javascript" src="https://gitcdn.link/repo/unt-libraries/assets360/v2.0.1/app/script.js"></script>
+<script src="https://gitcdn.link/repo/unt-libraries/assets360/v2.0.1/assets/scripts/lazysizes.min.js"></script>
+<script src="https://gitcdn.link/repo/unt-libraries/assets360/v2.0.1/assets/scripts/unt.min.js"></script>
 
-<link rel="apple-touch-icon" sizes="180x180" href="https://gitcdn.link/repo/unt-libraries/assets360/v2.0.0/20190114/assets/images/branding/icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://gitcdn.link/repo/unt-libraries/assets360/v2.0.0/20190114/assets/images/branding/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://gitcdn.link/repo/unt-libraries/assets360/v2.0.0/20190114/assets/images/branding/icons/favicon-16x16.png">
-<link rel="mask-icon" href="https://gitcdn.link/repo/unt-libraries/assets360/v2.0.0/20190114/assets/images/branding/icons/safari-pinned-tab.svg" color="#006a31">
-<link rel="shortcut icon" href="https://gitcdn.link/repo/unt-libraries/assets360/v2.0.0/20190114/assets/images/branding/icons/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="https://gitcdn.link/repo/unt-libraries/assets360/v2.0.1/assets/images/branding/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://gitcdn.link/repo/unt-libraries/assets360/v2.0.1/assets/images/branding/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://gitcdn.link/repo/unt-libraries/assets360/v2.0.1/assets/images/branding/icons/favicon-16x16.png">
+<link rel="mask-icon" href="https://gitcdn.link/repo/unt-libraries/assets360/v2.0.1/assets/images/branding/icons/safari-pinned-tab.svg" color="#006a31">
+<link rel="shortcut icon" href="https://gitcdn.link/repo/unt-libraries/assets360/v2.0.1/assets/images/branding/icons/favicon.ico">
 
 <meta name="theme-color" content="#006a31">
