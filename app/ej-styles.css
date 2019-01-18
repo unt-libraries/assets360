@@ -53,6 +53,8 @@ div.topNavContainer {width:100%;}
 .SS_CategorySelector {margin-top: 5px;}
 .SS_CitationTable {font-size: 1.3em; font-weight: bold;}
 .SS_CitationTable {width: 58% !important;}
+.SS_CitationTable tr td:first-child {width: 5em;}
+.SS_CitationTable tr td:last-child {width: auto !important;}
 table.CandyWrapper {width: 100% !important;}
 .SS_ContentHeading {font-weight: normal;}
 #JournalLinkTable * {font-size: 102% !important;}
