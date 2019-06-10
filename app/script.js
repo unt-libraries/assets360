@@ -90,7 +90,7 @@ $(document).ready(function(){
 		$("#ArticleCL").each(function() {
 			if ($.trim($(this).text())) {
         article_findit = true;
-        var findit_html = "<img src=\"https://gitcdn.link/repo/unt-libraries/assets360/v2.0.2/assets/images/find-it-round.png\" alt=\"FIND IT\" /> Go to Article";
+        var findit_html = "<img src=\"https://gitcdn.xyz/repo/unt-libraries/assets360/v2.0.3/assets/images/find-it-round.png\" alt=\"FIND IT\" /> Go to Article";
         $(this).find("a").html(findit_html);
         $(this).addClass("find-it");
         $(this).parent().attr("align", "left").attr("width", "25%");
@@ -101,7 +101,7 @@ $(document).ready(function(){
 		$("#JournalCL").each(function() {
       var journal_html = "Go to Journal";
       if (!article_findit) {
-        var journal_html = "<img src=\"https://gitcdn.link/repo/unt-libraries/assets360/v2.0.2/assets/images/find-it-round.png\" alt=\"FIND IT\" /> " + journal_html;
+        var journal_html = "<img src=\"https://gitcdn.xyz/repo/unt-libraries/assets360/v2.0.3/assets/images/find-it-round.png\" alt=\"FIND IT\" /> " + journal_html;
         $(this).addClass("find-it");
         $(this).parent().attr("width", "25%");
       }

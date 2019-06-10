@@ -41,7 +41,7 @@ The 360 services are vendor-hosted and are therefore unusual in terms of how the
 * So we've chosen to host our local assets directly via GitHub, using free CDN services that enable you to serve raw files over GitHub. Specifically, these include:
 
   * [raw.githack.com](https://raw.githack.com)
-  * [GitCDN](https://gitcdn.link/)
+  * [GitCDN](https://gitcdn.xyz/)
   * GitHub pages for this repository, served via the `gh-pages` branch.
 
   Raw.githack and GitCDN allow you to reference different versions of files in a GitHub repository via specific tags or specific commit hashes, and they have very long-term caching. These are good for providing production-level links to specific tagged versions of assets, which works well given how production deployment of our 360 services works.
@@ -64,7 +64,7 @@ Before getting started, clone this repository to a local working directory if yo
 
 2. Open the `footer.html`, `header.html`, and `meta.txt` files from the `snippets` directory. These _should_ match whatever is currently in the admin console in the Client Center.
 
-3. In all three files, you need to switch references pointing to the current live tagged version of each asset (being served by a CDN) over to the GH Pages version. E.g., if the current live version is v2.0.0, do a global find/replace in your text editor: find `https://gitcdn.link/repo/unt-libraries/assets360/v2.0.0/` and replace it with `https://unt-libraries.github.io/assets360/`.
+3. In all three files, you need to switch references pointing to the current live tagged version of each asset (being served by a CDN) over to the GH Pages version. E.g., if the current live version is v2.0.0, do a global find/replace in your text editor: find `https://gitcdn.xyz/repo/unt-libraries/assets360/v2.0.0/` and replace it with `https://unt-libraries.github.io/assets360/`.
 
 4. Log into the Admin Console on the SerialsSolutions Client Center site and open the 360 Core E-journal Portal administration console (version 1).
 
@@ -81,7 +81,7 @@ Before getting started, clone this repository to a local working directory if yo
 
 1. Decide what this new version will be. E.g., if the old version was v2.0.0, maybe this is v2.0.1.
 
-2. In the `footer.html`, `header.html`, and `meta.txt` files from the `snippets` directory, do another series of global find/replace commands to replace the GH Pages URL with the CDN URL. E.g., replace `https://unt-libraries.github.io/assets360/` with `https://gitcdn.link/repo/unt-libraries/assets360/v2.0.1/`.
+2. In the `footer.html`, `header.html`, and `meta.txt` files from the `snippets` directory, do another series of global find/replace commands to replace the GH Pages URL with the CDN URL. E.g., replace `https://unt-libraries.github.io/assets360/` with `https://gitcdn.xyz/repo/unt-libraries/assets360/v2.0.1/`.
 
 3. Save these and push them to GH. (Still on the `gh-pages` branch.)
 
