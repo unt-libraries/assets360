@@ -1,24 +1,17 @@
 <!--[if lte IE 10]>
     <p class="browser-upgrade">Your browser is <strong>outdated</strong>. This site will not function in it. Please <a href="https://browsehappy.com/">upgrade</a> to improve your experience and security.</p>
   <![endif]-->
-  <div id="skip-link">
-    <a href="#main-content" class="sr-only sr-only-focusable" id="access-skip-link">Skip to main content</a>
-    <a href="/node/2179" class="sr-only sr-only-focusable" id="access-services-link">Services for Persons with Disabilities</a>
+<div id="head" class="wrapper--header fixed-top">
 
-  </div>
-    
-<a id="skip"
-   class="skip  sr-only sr-only-focusable" 
-   href="#content"
-   data-event-category="link - accesibility"
-   data-event-action="skip"
-   data-event-label="#content">
-        Skip to main content
-</a>
-  <div id="head" class="wrapper--header fixed-top">
-
-  <div id="top" class="header h-100 container-fluid">
-
+  <header id="top" class="header h-100 container-fluid" aria-label="Site Header">
+    <a id="skip"
+       class="skip  sr-only sr-only-focusable" 
+       href="#content-wrapper"
+       data-event-category="link - accesibility"
+       data-event-action="skip"
+       data-event-label="#content-wrapper">
+            Skip to main content
+    </a>
     <section class="header__content h-100  row align-items-center  px-md-4">
       
       <div class="col-auto mr-auto">
@@ -31,24 +24,21 @@
            data-event-action="university"
            data-event-label="https://www.unt.edu/">
           <img id="unt-banner-img"
-               src="https://ui.library.unt.edu/assets360_A/assets/images/branding/banner.svg" 
+			   height="112px"
+               width="127px"
+               src="https://library.unt.edu/assets/images/branding/unt-1890-banner.svg" 
                alt="U N T Established 1890" 
                class="header__banner--ribbon  d-none d-md-inline">
           <img id="unt-banner-lettermark"
-               src="https://ui.library.unt.edu/assets360_A/assets/images/branding/unt.lettermark.svg" 
+		       height="38px"
+               width="112px"
+               src="https://library.unt.edu/assets/images/branding/unt.lettermark.svg" 
                alt="U N T"
                class="header__banner--lettermark">
         </a>
               
         <div class="header__title">
-          <div class="header__title--parent">
-              <a href="https://library.unt.edu"
-                  id="hd-subtitle"
-                  class="header__link"
-                  data-event-category="link - header"
-                  data-event-action="libraries"
-                  data-event-label="/">University Libraries</a>
-            </div>
+          
             
           <h1 class="header__title--primary">
             <a href="/"
@@ -56,134 +46,143 @@
                 class="header__link"
                 data-event-category="link - header"
                 data-event-action="libraries"
-                data-event-label="/">Catalog</a>
+                data-event-label="/">University Libraries</a>
           </h1>
         </div>
       </div>
       
-      <div class="col-auto">
+      <div class="col-auto" role="navigation" aria-label="Site-wide dialogs of quick links, grouped by function">
             <button id="hd-unt-toggle"
-                    type="button" 
-                    class="btn btn-link d-none d-md-inline-block" 
+                    type="button"
+                    class="btn btn-link d-none d-md-inline-block"
                     data-target="#unt-drawer"
                     data-toggle="modal"
-                    aria-label="Expand Menu of U N T Links" 
-                    aria-controls="unt-drawer" 
+                    aria-label="Open Dialog: U N T - Quick Links"
+                    aria-controls="unt-drawer"
                     data-event-category="button - header"
                     data-event-action="toggle"
                     data-event-label="unt drawer">
-              <i class="fas fa-bookmark"></i>
+              <i aria-hidden="true" class="fas fa-bookmark"></i>
             </button>
-          <button id="hd-libraries-toggle" 
-                  type="button" 
-                  class="btn btn-link" 
+          <button id="hd-libraries-toggle"
+                  type="button"
+                  class="btn btn-link"
                   data-target="#libraries-drawer"
                   data-toggle="modal"
-                  aria-label="People and Places" 
+                  aria-label="Open Dialog: Libraries - People and Places"
                   aria-controls="libraries-drawer"
                   data-event-category="button - header"
                   data-event-action="toggle"
                   data-event-label="libraries drawer">
-            <i class="fas fa-university"></i>
+            <i aria-hidden="true" class="fas fa-university"></i>
           </button>
-          <button id="hd-tech-toggle" 
-                  type="button" 
-                  class="btn btn-link" 
+          <button id="hd-tech-toggle"
+                  type="button"
+                  class="btn btn-link"
                   data-target="#tech-drawer"
                   data-toggle="modal"
-                  aria-label="U N T Libraries Technology Quick Links" 
-                  aria-controls="tech-drawer" 
+                  aria-label="Open Dialog: Libraries - Lending and Technology"
+                  aria-controls="tech-drawer"
                   data-event-category="button - header"
                   data-event-action="toggle"
                   data-event-label="common drawer">
-            <i class="fas fa-desktop"></i>
+            <i aria-hidden="true" class="fas fa-desktop"></i>
           </button>
-          <button id="hd-search-toggle" 
-                  type="button" 
-                  class="btn btn-link" 
+          <button id="hd-search-toggle"
+                  type="button"
+                  class="btn btn-link"
                   data-target="#search-drawer"
                   data-toggle="modal"
-                  aria-label="U N T Libraries Search Tool" 
-                  aria-controls="search-drawer" 
+                  aria-label="Open Dialog: Libraries - Search, Find and Explore"
+                  aria-controls="search-drawer"
                   data-event-category="button - header"
                   data-event-action="toggle"
                   data-event-label="search drawer">
-            <i class="fas fa-search"></i>
+            <i aria-hidden="true" class="fas fa-search"></i>
           </button>
-          <button id="hd-main-open" 
-                  type="button" 
-                  class="btn btn-link d-md-none toggle--main" 
+          <button id="hd-main-open"
+                  type="button"
+                  class="btn btn-link d-md-none toggle--main"
                   data-target="#main-menu-drawer"
                   data-toggle="modal"
-                  aria-label="Site Navigation" 
-                  aria-controls="main-menu-drawer"                   
+                  aria-label="Open Dialog: Libraries - Menu, Mobile Navigation"
+                  aria-controls="main-menu-drawer"
                   data-event-category="button - header"
                   data-event-action="toggle"
                   data-event-label="navigation drawer">
-            <i class="fas fa-bars"></i>
+            <i aria-hidden="true" class="fas fa-bars"></i>
           </button>
         </div>
     </section>
-  </div>
+  </header>
 </div>
 
 <div id="primary-navigation" class="wrapper--navigation p-1 d-none d-md-block">
-  <nav id="unt-desktop-links" class="container-fluid navigation navigation--desktop  px-md-4">
+  <nav id="unt-desktop-links" class="container-fluid navigation navigation--desktop  px-md-4" aria-label="gateway pages to library services">
     <ul class="nav navigation--group pl-sm-3">
             <li class="nav-item d-none d-lg-inline">
                 <a href="https://library.unt.edu/"
                     class="nav-link"
                     data-event-category="link - navbar"
                     data-event-action="libraries"
-                    data-event-label="https://library.unt.edu/">Home</a></li>
+                    data-event-label="https://library.unt.edu/"
+					aria-label="Libraries Home Page">Home</a></li>
             <li class="nav-item">
                 <a href="https://library.unt.edu/about/"
                     class="nav-link "
                     data-event-category="link - navbar"
                     data-event-action="libraries"
-                    data-event-label="https://library.unt.edu/about/">About</a></li>
+                    data-event-label="https://library.unt.edu/about/"
+					aria-label="About the libraries">About</a></li>
             <li class="nav-item">
                 <a href="https://library.unt.edu/research/"
                     class="nav-link "
                     data-event-category="link - navbar"
                     data-event-action="libraries"
-                    data-event-label="https://library.unt.edu/research/">Research</a></li>
+                    data-event-label="https://library.unt.edu/research/"
+					aria-label="Research Overview">Research</a></li>
             <li class="nav-item">
                 <a href="https://library.unt.edu/services/"
                     class="nav-link "
                     data-event-category="link - navbar"
                     data-event-action="libraries"
-                    data-event-label="https://library.unt.edu/services/">Services</a></li>
+                    data-event-label="https://library.unt.edu/services/"
+					aria-label="Services Listing">Services</a></li>
             <li class="nav-item">
                 <a href="https://library.unt.edu/spaces/"
                     class="nav-link "
                     data-event-category="link - navbar"
                     data-event-action="libraries"
-                    data-event-label="https://library.unt.edu/spaces/">Spaces</a></li>                    
+                    data-event-label="https://library.unt.edu/spaces/"
+					aria-label="Library Spaces Listing">Spaces</a></li>
             <li class="nav-item">
                 <a href="https://library.unt.edu/news/"
                     class="nav-link "
                     data-event-category="link - navbar"
                     data-event-action="libraries"
-                    data-event-label="https://library.unt.edu/news/">News</a></li>
+                    data-event-label="https://library.unt.edu/news/"
+					aria-label="Library News and Announcements">News</a></li>
             <li class="nav-item">
-                <a href="https://calendar.library.unt.edu/"
+                <a href="https://calendar.library.unt.edu" 
                     class="nav-link "
                     data-event-category="link - navbar"
                     data-event-action="libraries"
-                    data-event-label="https://calendar.library.unt.edu/">Calendar</a></li>
+                    data-event-label="https://calendar.library.unt.edu"
+                    aria-label="Library Events">Calendar</a></li>
             <li class="nav-item ml-auto">
                 <a href="https://library.unt.edu/ask-us/"
                     class="nav-link "
                     data-event-category="link - navbar"
                     data-event-action="libraries"
-                    data-event-label="https://library.unt.edu/ask-us/">Ask Us</a></li>
+                    data-event-label="https://library.unt.edu/ask-us/"
+					aria-label="Ask us your questions">Ask Us</a></li>
             <li class="nav-item">
                 <a href="https://library.unt.edu/accounts-login/"
                     class="nav-link "
                     data-event-category="link - navbar"
                     data-event-action="libraries"
-                    data-event-label="https://library.unt.edu/accounts-login/"><span class="d-sm-none d-lg-inline">Accounts </span>Login</a></li>
+                    data-event-label="https://library.unt.edu/accounts-login/"
+					aria-label="Log in to your catalog or illiad account"><span class="d-sm-none d-lg-inline">Accounts </span>Login</a></li>
         </ul>
   </nav>
 </div>
@@ -196,7 +195,7 @@
 </div>
 
 <div class="wrapper--content">
-<main class="content container-fluid px-md-5">
+<main class="content container-fluid px-md-5" aria-labelledby="page-title">
 <div id="content-wrapper" class="row">
 <section class="col-sm-12 order-sm-12 order-xs-1 pt-3 ">
 <div class="pageContent" id="content"><!-- content container -->

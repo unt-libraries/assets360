@@ -19,6 +19,7 @@
               action="https://unt.edu/search-results"
               method="GET"
               role="search"
+			  aria-label="Search U N T Websites"
               autocomplete="off"
               data-event-category="form - search - unt"
               data-event-label="/services/">
@@ -26,7 +27,7 @@
             <div class="col">
               <div class="input-group">
                   <input class="form-control primary-search query"
-                          id="bento-q"
+                          id="unt-q"
                           name="search"
                           aria-label="Search across the entire U N T domain."
                           type="text"
@@ -34,15 +35,16 @@
                           value="">
                 <span class="input-group-btn">
                 <button type="submit" class="btn btn-success">
-                  <i class="fas fa-search"></i></button>
+                  <i aria-hidden="true" class="fas fa-search"></i>
+                  <span class="sr-only">Search</span>
                 </span>
               </div>
             </div>
           </div>
         </form>
-        <div class="drawer__divider"></div>
+        <hr class="drawer__divider" />
 
-        <nav class="nav flex-column">
+        <nav class="nav flex-column" aria-label="U N T Campus Links">
           <a href="https://unt.edu/"
              class="link--external nav-item nav-link px-3"
              data-event-category="link - drawer"
@@ -87,7 +89,6 @@
           </nav>
       </div>
     </div>
-    <img data-src="https://ui.library.unt.edu/assets360_A/assets/images/backgrounds/drawer.png" class="lazyload cute d-none" alt="" />
   </div>
 </div>
 
@@ -98,39 +99,39 @@
       <div class="drawer-header">
         <h2 class="drawer-title px-3" id="libraries-drawer-title">People &amp; Places</h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <i class="fas fa-times fa-lg"></i>
+          <i aria-hidden="true" class="fas fa-times fa-lg"></i>
         </button>
       </div>
       <div class="drawer-body">
 
 
-        <h2 class="drawer__sub-heading px-3">Information For...</h2>
+        <h2 class="drawer__sub-heading px-3">Information For<span aria-hidden="true">...</span><span class="sr-only"> Specific Audiences</span></h2>
 
         <a href="https://library.unt.edu/services/for-graduate-students/"
             class="nav-item nav-link"
             data-ga-category="link - drawer"
             data-ga-action="libraries"
-            data-ga-label="https://library.unt.edu/services/for-graduate-students/">Graduate Students</a>
+            data-ga-label="https://library.unt.edu/services/for-graduate-students/"><span class="sr-only">Info for </span>Graduate Students</a>
 
         <a href="https://library.unt.edu/services/for-faculty/"
             class="nav-item nav-link"
             data-ga-category="link - drawer"
             data-ga-action="libraries"
-            data-ga-label="https://library.unt.edu/services/for-faculty/">Faculty/Staff</a>
+            data-ga-label="https://library.unt.edu/services/for-faculty/"><span class="sr-only">Info for </span>Faculty/Staff</a>
 
         <a href="https://library.unt.edu/services/for-community-visitors/"
             class="nav-item nav-link"
             data-ga-category="link - drawer"
             data-ga-action="libraries"
-            data-ga-label="https://library.unt.edu/services/for-community-visitors/">Community &amp; Visitors</a>
+            data-ga-label="https://library.unt.edu/services/for-community-visitors/"><span class="sr-only">Info for </span>Community &amp; Visitors</a>
 
         <a href="https://library.unt.edu/services/persons-with-disabilities/"
             class="nav-item nav-link"
             data-ga-category="link - drawer"
             data-ga-action="libraries"
-            data-ga-label="https://library.unt.edu/services/persons-with-disabilities/">Persons with Disabilities</a>
+            data-ga-label="https://library.unt.edu/services/persons-with-disabilities/"><span class="sr-only">Info for </span>Persons with Disabilities</a>
 
-        <div class="drawer__divider" role="separator"></div>
+        <hr class="drawer__divider" />
 
         <h2 class="drawer__sub-heading px-3">Locations &amp; Hours</h2>
 
@@ -146,13 +147,17 @@
              class="nav-link d-inline icon-link small"
              data-ga-category="link - drawer"
              data-ga-action="libraries"
-             data-ga-label="https://library.unt.edu/willis/#hours"><i title="Willis Library Hours" class="far fa-calendar-alt fa-lg"></i></a> &nbsp;
+             data-ga-label="https://library.unt.edu/willis/#hours"><i aria-hidden="true" class="far fa-calendar-alt fa-lg"></i>
+              <span class="sr-only">Willis Library Hours</span>
+		   </a> &nbsp;
 
            <a href="https://library.unt.edu/willis/#maps"
              class="nav-link d-inline icon-link small"
              data-ga-category="link - drawer"
              data-ga-action="libraries"
-             data-ga-label="https://library.unt.edu/willis/#maps"><i title="Willis Library Location and Floor Maps" class="fas fa-map-marker-alt fa-lg"></i></a>
+             data-ga-label="https://library.unt.edu/willis/#maps"><i aria-hidden="true" class="fas fa-map-marker-alt fa-lg"></i>
+              <span class="sr-only">Willis Library Location and Floor Maps</span>
+           </a>
           </span>
         </div>
 
@@ -168,35 +173,43 @@
              class="nav-link d-inline icon-link small"
              data-ga-category="link - drawer"
              data-ga-action="libraries"
-             data-ga-label="https://library.unt.edu/discovery-park/#hours"><i title="Discovery Park Library Hours" class="far fa-calendar-alt fa-lg"></i></a> &nbsp;
+             data-ga-label="https://library.unt.edu/discovery-park/#hours"><i aria-hidden="true" class="far fa-calendar-alt fa-lg"></i>
+              <span class="sr-only">Discovery Park Library Hours</span>
+           </a> &nbsp;
 
            <a href="https://library.unt.edu/discovery-park/#maps"
              class="nav-link d-inline icon-link small"
              data-ga-category="link - drawer"
              data-ga-action="libraries"
-             data-ga-label="https://library.unt.edu/discovery-park/#maps"><i title="Discovery Park Library Location and Floor Maps" class="fas fa-map-marker-alt fa-lg"></i></a>
+             data-ga-label="https://library.unt.edu/discovery-park/#maps"><i aria-hidden="true" class="fas fa-map-marker-alt fa-lg"></i>
+              <span class="sr-only">Discovery Park Library Location and Floor Maps</span>
+           </a>
           </span>
         </div>
 
         <div class="nav-item d-flex">
-          <a href="https://library.unt.edu/eagle-commons/"
+          <a href="https://library.unt.edu/sycamore/"
              class="nav-link col"
              data-ga-category="link - drawer"
              data-ga-action="libraries"
-             data-ga-label="https://library.unt.edu/eagle-commons/">Eagle Commons Library</a>
+             data-ga-label="https://library.unt.edu/sycamore/">Sycamore Library</a>
 
          <span class="float-right mr-3">
-           <a href="https://library.unt.edu/eagle-commons/#hours"
+           <a href="https://library.unt.edu/sycamore/#hours"
              class="nav-link d-inline icon-link small"
              data-ga-category="link - drawer"
              data-ga-action="libraries"
-             data-ga-label="https://library.unt.edu/eagle-commons/#hours"><i title="Eagle Commons Library Hours" class="far fa-calendar-alt fa-lg"></i></a> &nbsp;
+             data-ga-label="https://library.unt.edu/sycamore/#hours"><i aria-hidden="true" class="far fa-calendar-alt fa-lg"></i>
+              <span class="sr-only">Sycamore Library Hours</span>
+           </a> &nbsp;
 
-           <a href="https://library.unt.edu/eagle-commons/#maps"
+           <a href="https://library.unt.edu/sycamore/#maps"
              class="nav-link d-inline icon-link small"
              data-ga-category="link - drawer"
              data-ga-action="libraries"
-             data-ga-label="https://library.unt.edu/eagle-commons/#maps"><i title="Eagle Commons Library Location and Floor Maps" class="fas fa-map-marker-alt fa-lg"></i></a>
+             data-ga-label="https://library.unt.edu/sycamore/#maps"><i title="" class="fas fa-map-marker-alt fa-lg"></i>
+              <span class="sr-only">Sycamore Library Location and Floor Maps</span>
+           </a>
           </span>
         </div>
 
@@ -212,17 +225,21 @@
              class="nav-link d-inline icon-link small"
              data-ga-category="link - drawer"
              data-ga-action="libraries"
-             data-ga-label="https://library.unt.edu/media/#hours"><i title="Media Library Hours" class="far fa-calendar-alt fa-lg"></i></a> &nbsp;
+             data-ga-label="https://library.unt.edu/media/#hours"><i aria-hidden="true" class="far fa-calendar-alt fa-lg"></i>
+              <span class="sr-only">Media Library Hours</span>
+           </a> &nbsp;
 
            <a href="https://library.unt.edu/media/#maps"
              class="nav-link d-inline icon-link small"
              data-ga-category="link - drawer"
              data-ga-action="libraries"
-             data-ga-label="https://library.unt.edu/media/#maps"><i title="Media Library Location and Floor Maps" class="fas fa-map-marker-alt fa-lg"></i></a>
+             data-ga-label="https://library.unt.edu/media/#maps"><i aria-hidden="true" class="fas fa-map-marker-alt fa-lg"></i>
+              <span class="sr-only">Media Library Location and Floor Maps</span>
+           </a>
           </span>
         </div>
 
-        <div class="drawer__divider" role="separator"></div>
+        <hr class="drawer__divider" />
         <h2 class="drawer__sub-heading px-3">Spaces</h2>
         <a href="https://library.unt.edu/spaces/"
            class="nav-item nav-link"
@@ -230,17 +247,17 @@
            data-ga-action="libraries"
            data-ga-label="https://library.unt.edu/spaces/">Study Spaces, Classrooms, etc.</a>
 
-        <a href="https://calendar.library.unt.edu/reserve/"
+        <a href="https://reservations.library.unt.edu/Web/"
            class="nav-item nav-link"
            data-ga-category="link - drawer"
            data-ga-action="libraries"
-           data-ga-label="https://calendar.library.unt.edu/reserve/">Student Room Reservations</a>
+           data-ga-label="https://reservations.library.unt.edu/Web/">Student Room Reservations</a>
 
-        <a href="https://calendar.library.unt.edu/reserve/"
+        <a href="https://events.library.unt.edu/reserve/login.php"
            class="nav-item nav-link"
            data-ga-category="link - drawer"
            data-ga-action="libraries"
-           data-ga-label="https://calendar.library.unt.edu/reserve/">Faculty/Staff Event Reservations</a>
+           data-ga-label="https://events.library.unt.edu/reserve/login.php">Faculty/Staff Event Reservations</a>
 
         <a href="https://esports.library.unt.edu/"
            class="nav-item nav-link"
@@ -254,7 +271,7 @@
            data-ga-action="libraries"
            data-ga-label="https://library.unt.edu/services/desks/">Service Desks</a>
 
-        <div class="drawer__divider" role="separator"></div>
+        <hr class="drawer__divider" />
         <h2 class="drawer__sub-heading px-3">Librarians and Staff</h2>
         <a href="https://library.unt.edu/ask-us/"
            class="nav-item nav-link"
@@ -281,7 +298,6 @@
            data-ga-label="https://library.unt.edu/jobs/">Employment Opportunities</a>
       </div>
     </div>
-    <img data-src="https://ui.library.unt.edu/assets360_A/assets/images/backgrounds/drawer.png" class="lazyload cute d-none" alt="" />
   </div>
 </div>
 
@@ -294,7 +310,7 @@
       <div class="drawer-header">
         <h2 class="drawer-title px-3" id="tech-drawer-title">Lending &amp; Technology</h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <i class="fas fa-times fa-lg"></i>
+          <i aria-hidden="true" class="fas fa-times fa-lg" title="close"></i>
         </button>
       </div>
       <div class="drawer-body">
@@ -304,7 +320,7 @@
             class="nav-item nav-link"
             data-event-category="link - drawer"
             data-event-action="libraries"
-            data-event-label="https://iii.library.unt.edu/patroninfo">Your Account / Renew Materials</a>
+            data-event-label="https://iii.library.unt.edu/patroninfo"><span class="sr-only">Catalog: </span>Your Account / Renew Materials</a>
 
         <a href="https://library.unt.edu/services/borrowing/"
             class="nav-item nav-link"
@@ -319,7 +335,7 @@
             data-event-label="https://library.unt.edu/services/online-holds/">Online Holds / Material Delivery</a>
 
 
-        <div class="drawer__divider" role="separator"></div>
+        <hr class="drawer__divider" />
         <h2 class="drawer__sub-heading px-3">Technology</h2>
 
         <a href="https://library.unt.edu/services/technology-computing/"
@@ -340,11 +356,11 @@
             data-event-action="libraries"
             data-event-label="https://library.unt.edu/services/printing-scanning-copies/">Printing, Scanning, Photocopies</a>
 
-        <a href="https://guides.library.unt.edu/factory"
+        <a href="https://guides.library.unt.edu/spark"
             class="nav-item nav-link"
             data-event-category="link - drawer"
             data-event-action="libraries"
-            data-event-label="https://guides.library.unt.edu/factory">The Factory (Makerspace, Tech. Lending)</a>
+            data-event-label="https://guides.library.unt.edu/spark">The Factory (Makerspace, Tech. Lending)</a>
 
         <a href="https://library.unt.edu/services/on-off-campus-access/"
             class="nav-item nav-link"
@@ -352,7 +368,7 @@
             data-event-action="libraries"
             data-event-label="https://library.unt.edu/services/on-off-campus-access/">On/Off Campus Access</a>
 
-        <div class="drawer__divider" role="separator"></div>
+        <hr class="drawer__divider" />
         <h2 class="drawer__sub-heading px-3">Help</h2>
 
         <a href="https://guides.library.unt.edu/citations-style-guides"
@@ -368,13 +384,12 @@
               <div class="input-group mb-4">
                 <input id="drawer-subjects-helper"
                         name="q"
+                        title="Search Subjects and Subject Guides"
                         class="subject-typeahead form-control"
                         type="text"
                         autocomplete="off"
+                        aria-label="Enter your search terms or phrase, selection will update this input and take you to the selected resource. Hit enter to search normally."
                         placeholder="type for subject suggestions">
-                <div class="input-group-append d-none">
-                    <span class="input-group-text"><i class="fas fa-external-link-alt"></i></span>
-                </div>             
               </div>
               <button type="submit" class="sr-only">Submit</button>
             </form>
@@ -385,22 +400,20 @@
             <form action="https://guides.library.unt.edu/srch.php" method="get" accept-charset="utf-8">
               <label for="drawer-course-helper" class="sr-only">Search for a Course Guide</label>
               <div class="input-group mb-4">
-                <input id="home-course-helper"
-                        name="q" 
+                <input id="drawer-course-helper"
+                        name="q"
+                        title="Search Course Guides"
                         class="course-typeahead form-control"
                         type="text"
                         autocomplete="off"
+                        aria-label="Enter your search terms or phrase, selection will update this input and take you to the selected resource. enter to search normally."
                         placeholder="type a course name/number">
-                <div class="input-group-append d-none">
-                    <span class="input-group-text"><i class="fas fa-external-link-alt"></i></span>
-                </div>
               </div>
               <button type="submit" class="sr-only">Submit</button>
             </form>
         </div>
       </div>
     </div>
-    <img data-src="https://ui.library.unt.edu/assets360_A/assets/images/backgrounds/drawer.png" class="lazyload cute d-none" alt="" />
   </div>
 </div>
 
@@ -413,7 +426,7 @@
       <div class="drawer-header">
         <h2 class="drawer-title px-3" id="search-drawer-title">Search, Find, Explore</h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <i class="fas fa-times fa-lg"></i>
+          <i aria-hidden="true" class="fas fa-times fa-lg" title="close"></i>
         </button>
       </div>
       <div class="drawer-body">
@@ -423,8 +436,9 @@
               action="https://library.unt.edu/search"
               method="GET"
               role="search"
+              aria-label="Multi-system search"
               data-event-category="form - search - bento"
-              data-event-label="https://library.unt.edu/services/ (drawer)">
+              data-event-label="/ (drawer)">
           <div class="row">
             <div class="col">
               <div class="input-group">
@@ -442,36 +456,38 @@
                   <input type="hidden" name="utm_campaign" value="drawer">
                 <span class="input-group-btn">
                 <button type="submit" class="btn btn-success">
-                  <i class="fas fa-search"></i></button>
+                  <i aria-hidden="true" class="fas fa-search" title="search"></i>
+                  <span class="sr-only">Search</span>
                 </span>
               </div>
             </div>
           </div>
         </form>
-        <div class="drawer__divider" role="seperator"></div>
+        <hr class="drawer__divider" />
         <h2 class="drawer__sub-heading px-3">Full Text Online:</h2>
         <a href="https://untexas.summon.serialssolutions.com/advanced#!/advanced"
            class="nav-item nav-link"
            data-event-category="link - drawer"
            data-event-action="external"
-           data-event-label="https://untexas.summon.serialssolutions.com/advanced#!/advanced">Peer-Reviewed Articles, etc.</a>
+           data-event-label="https://untexas.summon.serialssolutions.com/advanced#!/advanced">
+		   <span class="sr-only">Summon: </span>Peer-Reviewed Articles, etc.</a>
 
-        <div class="drawer__divider" role="seperator"></div>
+        <hr class="drawer__divider" />
         <h2 class="drawer__sub-heading px-3">Library Catalog:</h2>
 
         <a href="https://discover.library.unt.edu/"
            class="nav-item nav-link"
            data-event-category="link - drawer"
            data-event-action="libraries"
-           data-event-label="https://discover.library.unt.edu/">Basic Search</a>
+           data-event-label="https://discover.library.unt.edu/"><span class="sr-only">Catalog: </span>Basic Search</a>
 
         <a href="https://discover.library.unt.edu/advanced"
            class="nav-item nav-link"
            data-event-category="link - drawer"
            data-event-action="libraries"
-           data-event-label="https://discover.library.unt.edu/advanced">Advanced Search</a>
+           data-event-label="https://discover.library.unt.edu/advanced"><span class="sr-only">Catalog: </span>Advanced Search</a>
 
-        <div class="drawer__divider" role="seperator"></div>
+        <hr class="drawer__divider" />
         <h2 class="drawer__sub-heading px-3">Databases &amp; e-Journals</h2>
 
         <div class="nav-item py-1 px-3 select-widget" data-event-category="form - select-widget - databases">
@@ -479,24 +495,23 @@
 
           <form action="https://guides.library.unt.edu/az.php" method="get" accept-charset="utf-8">
             <div class="form-group">
-              <label class="main mb-2 pt-4 pt-sm-2"
-                     for="drawer-az-search sr-only">
+              <label class="main mb-2 pt-4 pt-sm-2 sr-only"
+                     for="drawer-az-search">
                 Find a Database
               </label>
-              <div class="input-group">
+              <div class="input-group database-group">
                 <input class="form-control az-typeahead"
                        id="drawer-az-search"
+                       title="Search for a Database"
                        name="q"
                        autocomplete="off"
+                       aria-label="Enter your search terms or phrase, selection will update this input and take you to the selected database."
                        type="text"
-                       aria-describedby="database-description"
                        placeholder="type for suggestions">
               </div>
               <button class="sr-only" type="submit">Submit</button>
             </div>
           </form>
-
-
         </div>
 
         <a href="https://discover.library.unt.edu/?f%5Baccess_facet%5D%5B%5D=Online&f%5Bresource_type_facet%5D%5B%5D=journals_periodicals"
@@ -505,23 +520,22 @@
            data-event-action="libraries"
            data-event-label="https://discover.library.unt.edu/?f%5Baccess_facet%5D%5B%5D=Online&f%5Bresource_type_facet%5D%5B%5D=journals_periodicals">e-Journals</a>
 
-
-        <div class="drawer__divider" role="seperator"></div>
+        <hr class="drawer__divider" />
         <h2 class="drawer__sub-heading px-3">Courses &amp; Reserves</h2>
 
         <a href="https://iii.library.unt.edu/search/r"
            class="nav-item nav-link"
            data-event-category="link - drawer"
            data-event-action="libraries"
-           data-event-label="https://iii.library.unt.edu/search/r">Course Reserves</a>
+           data-event-label="https://iii.library.unt.edu/search/r"><span class="sr-only">Catalog: </span>Course Reserves</a>
 
-        <a href="https://audioreserves.library.unt.edu/"
+        <a href="https://web.microsoftstream.com/"
            class="nav-item nav-link"
            data-event-category="link - drawer"
            data-event-action="libraries"
-           data-event-label="https://audioreserves.library.unt.edu/">Digital Audio Reserves</a>
+           data-event-label="https://web.microsoftstream.com/">Digital Audio Reserves</a>
 
-        <div class="drawer__divider" role="seperator"></div>
+        <hr class="drawer__divider" />
         <h2 class="drawer__sub-heading px-3">Created and/or Curated @ UNT</h2>
 
         <div class="nav-item d-flex">
@@ -529,7 +543,7 @@
              class="nav-item nav-link col"
              data-event-category="link - drawer"
              data-event-action="libraries"
-             data-event-label="https://digital2.library.unt.edu/search/">Digital Collections</a>
+             data-event-label="https://digital2.library.unt.edu/search/"><span class="sr-only">University Libraries Curated: </span>Digital Collections</a>
 
             <span>
 
@@ -537,17 +551,17 @@
                class="nav-link d-inline small"
                data-event-category="link - drawer"
                data-event-action="libraries"
-               data-event-label="https://digital.library.unt.edu/">UNT</a> <span class="drawer__divider--inline">|</span>
+               data-event-label="https://digital.library.unt.edu/"><span aria-role="hidden">UNT </span><span class="sr-only">Digital Library</span></a> <span role="separator" class="drawer__divider--inline">|</span>
              <a href="https://texashistory.unt.edu/"
                class="nav-link d-inline small"
                data-event-category="link - drawer"
                data-event-action="libraries"
-               data-event-label="https://texashistory.unt.edu/">TX</a> <span class="drawer__divider--inline">|</span>
+               data-event-label="https://texashistory.unt.edu/"><span aria-role="hidden">TX </span><span class="sr-only">Portal to Texas History</span></a> <span role="separator" class="drawer__divider--inline">|</span>
              <a href="https://gateway.okhistory.org/"
                class="nav-link d-inline small"
                data-event-category="link - drawer"
                data-event-action="libraries"
-               data-event-label="https://gateway.okhistory.org/">OK</a>
+               data-event-label="https://gateway.okhistory.org/"><span aria-role="hidden">OK </span><span class="sr-only">Gateway to Oklahoma History</span></a>
             </span>
         </div>
 
@@ -569,7 +583,6 @@
 
       </div>
     </div>
-    <img data-src="https://ui.library.unt.edu/assets360_A/assets/images/backgrounds/drawer.png" class="lazyload cute d-none" alt="" />
   </div>
 </div>
 
@@ -582,7 +595,7 @@
       <div class="drawer-header">
         <h2 class="drawer-title px-3" id="main-drawer-title">Menu</h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <i class="fas fa-times fa-lg"></i>
+          <i aria-hidden="true" class="fas fa-times fa-lg"></i>
         </button>
       </div>
       <div class="drawer-body">
@@ -593,8 +606,11 @@
              class="btn btn-success btn-lg w-25"
              data-event-category="link - drawer"
              data-event-action="telephone">
-            <i class="fas fa-phone"></i><br/>
-            <span class="small">CALL</span>
+            <i aria-hidden="true" class="fas fa-phone"></i><br/>
+            <span class="small">
+              CALL
+              <span class="sr-only"> The Libraries</span>
+			</span>
           </a>
 
           <a href="https://library.unt.edu/ask-us/"
@@ -602,7 +618,7 @@
               data-event-category="link - drawer"
               data-event-action="libraries"
               data-event-label="https://library.unt.edu/ask-us/">
-              <i class="fas fa-question"></i><br/>
+              <i aria-hidden="true" class="fas fa-question"></i><br/>
               <span class="small">ASK US</span>
           </a>
 
@@ -611,62 +627,87 @@
               data-event-category="link - drawer"
               data-event-action="libraries"
               data-event-label="https://library.unt.edu/accounts-login/">
-              <i class="fas fa-user"></i><br/>
-              <span class="small">LOGIN</span>
+              <i aria-hidden="true" class="fas fa-user"></i><br/>
+              <span class="small">
+                <span class="sr-only">Account </span>
+                LOGIN
+              </span>
           </a>
 
         </div>
 
-        <div class="drawer__divider"></div>
+        <hr class="drawer__divider" />
 
         <a href="https://library.unt.edu/"
             class="nav-item nav-link"
             data-event-category="link - drawer"
             data-event-action="libraries"
             data-event-label="https://library.unt.edu/">University Libraries Home</a>
+		
+		<a href="https://library.unt.edu/about/"
+            class="nav-item nav-link"
+            data-event-category="link - drawer"
+            data-event-action="libraries"
+            data-event-label="https://library.unt.edu/about/">
+			<span class="sr-only">Libraries: </span>
+			About</a>
 
         <a href="https://library.unt.edu/research/"
             class="nav-item nav-link"
             data-event-category="link - drawer"
             data-event-action="libraries"
-            data-event-label="https://library.unt.edu/research/">Research</a>
+            data-event-label="https://library.unt.edu/research/">
+			<span class="sr-only">Libraries: </span>
+			Research</a>
 
         <a href="https://library.unt.edu/services/"
             class="nav-item nav-link"
             data-event-category="link - drawer"
             data-event-action="libraries"
-            data-event-label="https://library.unt.edu/services/">Services</a>
-
-        <a href="https://library.unt.edu/about/"
+            data-event-label="https://library.unt.edu/services/">
+			<span class="sr-only">Libraries: </span>
+			Services</a>
+		
+		<a href="https://library.unt.edu/spaces/"
             class="nav-item nav-link"
             data-event-category="link - drawer"
             data-event-action="libraries"
-            data-event-label="https://library.unt.edu/about/">About</a>
+            data-event-label="https://library.unt.edu/spaces/">
+          <span class="sr-only">Libraries: </span>
+          Spaces</a>
 
         <a href="https://library.unt.edu/news/"
             class="nav-item nav-link"
             data-event-category="link - drawer"
             data-event-action="libraries"
-            data-event-label="https://library.unt.edu/news/">News </a>
+            data-event-label="https://library.unt.edu/news/">
+			<span class="sr-only">Libraries: </span>
+			News </a>
 
-        <a href="https://library.unt.edu/events/"
+        <a href="https://calendar.library.unt.edu"
             class="nav-item nav-link"
             data-event-category="link - drawer"
             data-event-action="libraries"
-            data-event-label="https://library.unt.edu/events/">Events</a>
-
+            data-event-label="https://calendar.library.unt.edu">
+          <span class="sr-only">Libraries: </span>
+          Calendar</a>
         
-        <div class="drawer__divider"></div>
+        <hr class="drawer__divider" />
 
-        <nav class="nav justify-content-center py-4">
+        <nav class="nav justify-content-center py-4" aria-label="Social Media Links">
         
             <a class="nav-item nav-link nav-link--social"
                data-event-category="link - drawer"
                data-event-action="social"
                data-event-label="https://www.facebook.com/unt.libraries"
                aria-label="https://www.facebook.com/unt.libraries"
-               href="https://www.facebook.com/unt.libraries/">
-                  <i class="fab fa-facebook-f fa-lg"></i>
+               href="https://www.facebook.com/unt.libraries/"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-container="body"
+               title="facebook">
+                  <i aria-hidden="true" class="fab fa-facebook-f fa-lg"></i>
+                  <span class="sr-only">facebook</span>
                 </a>
         
             <a class="nav-item nav-link nav-link--social"
@@ -674,8 +715,13 @@
                data-event-action="social"
                data-event-label="https://twitter.com/unt_libraries"
                aria-label="https://twitter.com/unt_libraries"
-               href="https://twitter.com/unt_libraries/">
-                  <i class="fab fa-twitter fa-lg"></i>
+               href="https://twitter.com/unt_libraries/"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-container="body"
+               title="twitter">
+                  <i aria-hidden="true" class="fab fa-twitter fa-lg"></i>
+                  <span class="sr-only">twitter</span>
                 </a>
         
             <a class="nav-item nav-link nav-link--social"
@@ -683,8 +729,13 @@
                data-event-action="social"
                data-event-label="https://www.instagram.com/unt_libraries"
                aria-label="https://www.instagram.com/unt_libraries"
-               href="https://www.instagram.com/unt_libraries/">
-                  <i class="fab fa-instagram fa-lg"></i>
+               href="https://www.instagram.com/unt_libraries/"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-container="body"
+               title="instagram">
+                  <i aria-hidden="true" class="fab fa-instagram fa-lg"></i>
+                  <span class="sr-only">instagram</span>
                 </a>
         
             <a class="nav-item nav-link nav-link--social"
@@ -692,8 +743,13 @@
                data-event-action="social"
                data-event-label="https://github.com/unt-libraries"
                aria-label="https://github.com/unt-libraries"
-               href="https://github.com/unt-libraries/">
-                  <i class="fab fa-github-alt fa-lg"></i>
+               href="https://github.com/unt-libraries/"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-container="body"
+               title="github">
+                  <i aria-hidden="true" class="fab fa-github-alt fa-lg"></i>
+                  <span class="sr-only">github</span>
                 </a>
         
             <a class="nav-item nav-link nav-link--social"
@@ -701,8 +757,13 @@
                data-event-action="social"
                data-event-label="https://www.youtube.com/channel/UCcbS9fXWKE1SpUTpl1sNB6Q"
                aria-label="https://www.youtube.com/channel/UCcbS9fXWKE1SpUTpl1sNB6Q"
-               href="https://www.youtube.com/channel/UCcbS9fXWKE1SpUTpl1sNB6Q/">
-                  <i class="fab fa-youtube fa-lg"></i>
+               href="https://www.youtube.com/channel/UCcbS9fXWKE1SpUTpl1sNB6Q/"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-container="body"
+               title="youtube">
+                  <i aria-hidden="true" class="fab fa-youtube fa-lg"></i>
+                  <span class="sr-only">youtube</span>
                 </a>
         
         
@@ -710,82 +771,90 @@
       
       </div>
     </div>
-    <img data-src="https://ui.library.unt.edu/assets360_A/assets/images/backgrounds/drawer.png" class="lazyload cute d-none" alt="" />
   </div>
 </div>
 
 
 
-
-  
-<div class="wrapper--social py-2  px-md-5">
-   <nav class="nav justify-content-center nav--social">
+<footer aria-label="University Branding and links, Partner Links, and Contact Information">
     
-      <a aria-label="Follow the UNT Libraries on Twitter" 
+<div class="wrapper--social py-2  px-md-5">
+   <nav class="nav justify-content-center nav--social" aria-label="Footer Social Media Links">
+    
+      <a aria-label="Follow the UNT Libraries on facebook"
              href="https://www.facebook.com/unt.libraries/"
              class="nav-item nav-link mx-2"
              data-event-category="link - footer"
              data-event-action="social"
              data-event-label="https://www.facebook.com/unt.libraries/">
-             <i class="fab fa-facebook-f fw"></i></a>
+             <i aria-hidden="true" class="fab fa-facebook-f fw"></i>
+        </a>
     
-      <a aria-label="Follow the UNT Libraries on Twitter" 
+      <a aria-label="Follow the UNT Libraries on twitter"
              href="https://twitter.com/unt_libraries/"
              class="nav-item nav-link mx-2"
              data-event-category="link - footer"
              data-event-action="social"
              data-event-label="https://twitter.com/unt_libraries/">
-             <i class="fab fa-twitter fw"></i></a>
+             <i aria-hidden="true" class="fab fa-twitter fw"></i>
+        </a>
     
-      <a aria-label="Follow the UNT Libraries on Twitter" 
+      <a aria-label="Follow the UNT Libraries on instagram"
              href="https://www.instagram.com/unt_libraries/"
              class="nav-item nav-link mx-2"
              data-event-category="link - footer"
              data-event-action="social"
              data-event-label="https://www.instagram.com/unt_libraries/">
-             <i class="fab fa-instagram fw"></i></a>
+             <i aria-hidden="true" class="fab fa-instagram fw"></i>
+        </a>
     
-      <a aria-label="Follow the UNT Libraries on Twitter" 
+      <a aria-label="Follow the UNT Libraries on github"
              href="https://github.com/unt-libraries/"
              class="nav-item nav-link mx-2"
              data-event-category="link - footer"
              data-event-action="social"
              data-event-label="https://github.com/unt-libraries/">
-             <i class="fab fa-github-alt fw"></i></a>
+             <i aria-hidden="true" class="fab fa-github-alt fw"></i>
+        </a>
     
-      <a aria-label="Follow the UNT Libraries on Twitter" 
+      <a aria-label="Follow the UNT Libraries on youtube"
              href="https://www.youtube.com/channel/UCcbS9fXWKE1SpUTpl1sNB6Q/"
              class="nav-item nav-link mx-2"
              data-event-category="link - footer"
              data-event-action="social"
              data-event-label="https://www.youtube.com/channel/UCcbS9fXWKE1SpUTpl1sNB6Q/">
-             <i class="fab fa-youtube fw"></i></a>
+             <i aria-hidden="true" class="fab fa-youtube fw"></i>
+        </a>
     
 
     
 
-      <a aria-label="UNT Libraries News RSS feed" 
-         href="https://library.unt.edu/news/rss/"
+      <a aria-label="UNT Libraries News RSS feed"
+         href="/news/rss/"
          class="nav-item nav-link mx-2"
          data-event-category="link - footer"
          data-event-action="social"
-         data-event-label="https://library.unt.edu/news/rss/">
-         <i class="fas fa-rss fw"></i></a>
+         data-event-label="/news/rss/">
+         <i aria-hidden="true" class="fas fa-rss fw"></i>
+     </a>
   </nav>
 </div>
 
   <div class="wrapper--footer">
-  <footer id="main-footer" class="footer  container-fluid py-5 px-md-5">   
+  <div id="main-footer" class="footer  container-fluid py-5 px-md-5">   
 
     <div class="row">
 
       <div class="footer__lettermark d-none d-md-block col-md-3">
-        <a href="https://www.unt.edu/" 
+        <a href="https://www.unt.edu/"
            aria-label="U N T Home Site"
            data-event-category="link - footer - brand"
            data-event-action="university"
            data-event-label="https://www.unt.edu/">
-          <img src="https://ui.library.unt.edu/assets360_A/assets/images/branding/unt.stacked.green.svg" 
+          <img src = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+               width="254px"
+               height="115px"
+               data-src="https://library.unt.edu/assets/images/branding/unt.stacked.green.svg" class="lazyload"
                alt="U N T Established 1890">
         </a>
       </div>
@@ -794,28 +863,38 @@
         <h3 class="sr-only">Partnerships</h3>
         <ul class="list-unstyled">
           <li class="media">
-            <a id="footer-fdl" 
-               class="mr-3" 
+            <a id="footer-fdl"
+               class="mr-3"
                href="https://library.unt.edu/government-information/"
                data-event-category="link - footer - logo"
                data-event-action="libraries"
                data-event-label="https://library.unt.edu/government-information/">
-                <img class="" src="https://ui.library.unt.edu/assets360_A/assets/images/branding/fdl-library-blue.png" alt="Federal Depository"></a>
-            <div class="media-body">The University Libraries are a designated 
+                <img class="lazyload"
+                     width="75px"
+                     height="75px"
+                     src = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     data-src="https://library.unt.edu/assets/images/branding/fdl-library-blue.png"
+                     alt="Federal Depository"></a>
+            <div class="media-body">The University Libraries are a designated
               <a href="https://library.unt.edu/government-information/"
                  data-event-category="link - footer - text"
                  data-event-action="libraries"
                  data-event-label="https://library.unt.edu/government-information/">Federal Depository Library</a>.</div>
           </li>
           <li class="media my-4">
-            <a id="footer-finl" 
-               class="mr-3" 
+            <a id="footer-finl"
+               class="mr-3"
                href="https://guides.library.unt.edu/grants"
                data-event-category="link - footer - logo"
                data-event-action="libraries"
                data-event-label="https://guides.library.unt.edu/grants">
-                <img src="https://ui.library.unt.edu/assets360_A/assets/images/branding/foundation-center.png" alt="Funding Information Network Logo"></a>
-            <div class="media-body">The University Libraries are a 
+                <img class="lazyload"
+                     width="75px"
+                     height="76px"
+                     src = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     data-src="https://library.unt.edu/assets/images/branding/foundation-center.png"
+                     alt="Funding Information Network"></a>
+            <div class="media-body">The University Libraries are a
               <a href="https://guides.library.unt.edu/grants"
                  data-event-category="link - footer - text"
                  data-event-action="libraries"
@@ -824,7 +903,7 @@
         </ul>
       </div>
 
-      <div class="footer__contact col-sm col-lg-3">   
+      <div class="footer__contact col-sm col-lg-3">
         <h2 class="sr-only">Mail</h2>
         <div class="box box-dark box-border"> <span>University Libraries</span><br>
           <span> <span>1155 Union Circle #305190</span><br>
@@ -832,88 +911,98 @@
         </div>
 
         <h2 class="sr-only">Contact</h2>
-        <div><i class="fas fa-phone fw"></i> &nbsp;
              <a id="footer-phone"
+                class="d-inline-block my-2"
                 data-event-category="link - footer - text"
                 data-event-action="libraries"
                 data-event-label="tel:9405652413"
-                href="tel:tel:9405652413" 
-               >940.565.2411</a></div>
-        <div><i class="fas fa-envelope fw"></i> &nbsp;
+                href="tel:tel:9405652413">
+                <i aria-hidden="true" class="text-white fas fa-phone fa-fw"></i>
+                <span class="sr-only">Call: </span>940.565.2413</a>
              <a id="asks-us"
+                class="d-inline-block my-2"
                 data-event-category="link - footer - text"
                 data-event-action="libraries"
                 data-event-label="https://library.unt.edu/ask-us/"
-                href="https://library.unt.edu/ask-us/"> Research Questions</a></div>
-        <div><i class="fas fa-users fw"></i> &nbsp;
+                href="https://library.unt.edu/ask-us/">
+                <i aria-hidden="true" class="text-white fas fa-envelope fa-fw"></i>
+                <span class="sr-only">Ask us your </span>Research Questions</a>
              <a id="footer-staff-directory"
+                class="d-inline-block my-2"
                 data-event-category="link - footer - text"
                 data-event-action="libraries"
-                data-event-label="https://library.unt.edu/staff-directory/"
-                href="https://library.unt.edu/staff-directory/">Staff Directory</a></div>
-        <div><i class="fas fa-laptop fw"></i> &nbsp;
+                data-event-label="https://library.unt.edu/people/"
+                href="https://library.unt.edu/people/">
+                <i aria-hidden="true" class="text-white fas fa-users fa-fw"></i>
+                <span class="sr-only">University Libraries </span>Staff Directory</a>
              <a id="footer-ask-tech"
+                class="d-inline-block my-2"
                 data-event-category="link - footer - text"
                 data-event-action="libraries"
                 data-event-label="mailto:lib.support@unt.edu"
-                href="mailto:lib.support@unt.edu">Computer &amp; Technology Problems</a></div>
-        <div><i class="fas fa-exclamation-triangle fw"></i> &nbsp;
+                href="mailto:lib.support@unt.edu">
+                <i aria-hidden="true" class="text-white fas fa-laptop fa-fw"></i>
+                <span class="sr-only">Email to report </span>Computer &amp; Technology Problems</a>
              <a id="ask-building"
+                class="d-inline-block my-2"
                 data-event-category="link - footer - text"
                 data-event-action="libraries"
                 data-event-label="mailto:lib.facilities@unt.edu"
-                href="mailto:lib.facilities@unt.edu">Facilities Problems</a></div>
+                href="mailto:lib.facilities@unt.edu">
+                <i aria-hidden="true" class="text-white fas fa-exclamation-triangle fa-fw"></i>
+                <span class="sr-only">Email to report </span>Facilities Problems</a>
       </div>
     </div>
-  </footer>
+  </div>
 </div>
   <div class="wrapper--colophon">
   <section class="colophon  container-fluid">
     <h2 class="sr-only">Additional Links</h2>
     <div class="d-none d-sm-flex justify-content-center py-3  px-md-5">
       <p>
-        <a class="btn btn-success" 
+        <a class="btn btn-success"
            href="https://admissions.unt.edu"
            data-event-category="link - colophon"
            data-event-action="university"
-           data-event-label="https://admissions.unt.edu">Apply now <i class="fas fa-angle-right"></i></a>
-        <a class="btn btn-success" 
+           data-event-label="https://admissions.unt.edu"><span class="sr-only">UNT: </span>Apply now <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+        <a class="btn btn-success"
            href="https://tours.unt.edu"
            data-event-category="link - colophon"
            data-event-action="university"
-           data-event-label="https://tours.unt.edu">Schedule a tour <i class="fas fa-angle-right"></i></a>
-        <a class="btn btn-success" 
+           data-event-label="https://tours.unt.edu"><span class="sr-only">UNT: </span>Schedule a tour <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+        <a class="btn btn-success"
            href="https://admissions.unt.edu/requestinfo"
            data-event-category="link - colophon"
            data-event-action="university"
-           data-event-label="https://admissions.unt.edu/requestinfo">Get more info <i class="fas fa-angle-right"></i></a>
+           data-event-label="https://admissions.unt.edu/requestinfo"><span class="sr-only">UNT: </span>Get more info <i aria-hidden="true" class="fas fa-angle-right"></i></a>
       </p>
     </div>
     <div class="text-center">
       <p><a href="https://www.unt.edu/disclaimer"
             data-event-category="link - colophon"
             data-event-action="university"
-            data-event-label="https://www.unt.edu/disclaimer">Disclaimer</a>
+            data-event-label="https://www.unt.edu/disclaimer"><span class="sr-only">UNT: </span>Disclaimer</a>
        | <a href="https://www.unt.edu/ada"
            data-event-category="link - colophon"
            data-event-action="university"
-           data-event-label="https://www.unt.edu/ada">AA/EOE/ADA</a>
+           data-event-label="https://www.unt.edu/ada"><span class="sr-only">UNT: </span>AA/EOE/ADA</a>
        | <a href="https://www.unt.edu/privacy"
            data-event-category="link - colophon"
            data-event-action="university"
-           data-event-label="https://www.unt.edu/privacy">Privacy</a>
+           data-event-label="https://www.unt.edu/privacy"><span class="sr-only">UNT: </span>Privacy</a>
        | <a href="https://policy.unt.edu/policy/14-005"
            data-event-category="link - colophon"
            data-event-action="university"
-           data-event-label="https://policy.unt.edu/policy/14-005">Electronic Accessibility</a>
+           data-event-label="https://policy.unt.edu/policy/14-005"><span class="sr-only">UNT: </span>Electronic Accessibility</a>
        | <a href="https://www.unt.edu/required-links"
            data-event-category="link - colophon"
            data-event-action="university"
-           data-event-label="https://www.unt.edu/required-links">Required Links</a>
+           data-event-label="https://www.unt.edu/required-links"><span class="sr-only">UNT: </span>Required Links</a>
        | <a href="https://www.unt.edu"
            data-event-category="link - colophon"
            data-event-action="university"
-           data-event-label="https://www.unt.edu">UNT Home</a></p>
+           data-event-label="https://www.unt.edu">UNT Home</a>
+	  </p>
     </div>
   </section>
 </div>
@@ -923,6 +1012,7 @@
    data-event-category="link - top"
    data-event-action="page"
    role="button">
-  <i class="fas fa-angle-up" data-fa-transform="grow-8 up-4"></i>
+  <i aria-hidden="true" class="fas fa-angle-up" data-fa-transform="grow-8 up-4"></i>
   <span style="display:block; margin-top:3px">top</span>
 </a>
+</footer>
