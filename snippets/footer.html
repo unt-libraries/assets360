@@ -16,7 +16,7 @@
 
         <form id="search-unt-form"
               class="p-3"
-              action="https://unt.edu/search-results"
+              action="https://search.unt.edu/s/search.html"
               method="GET"
               role="search"
 			  aria-label="Search U N T Websites"
@@ -26,9 +26,12 @@
           <div class="row">
             <div class="col">
               <div class="input-group">
+                  <input type="hidden" 
+                         name="collection"
+                         value="uni-nt-search">
                   <input class="form-control primary-search query"
                           id="unt-q"
-                          name="search"
+                          name="query"
                           aria-label="Search across the entire U N T domain."
                           type="text"
                           placeholder="Search unt.edu"
@@ -900,25 +903,6 @@
                  data-event-category="link - footer - text"
                  data-event-action="libraries"
                  data-event-label="https://library.unt.edu/government-information/">Federal Depository Library</a>.</div>
-          </li>
-          <li class="media my-4">
-            <a id="footer-finl"
-               class="mr-3"
-               href="https://guides.library.unt.edu/grants"
-               data-event-category="link - footer - logo"
-               data-event-action="libraries"
-               data-event-label="https://guides.library.unt.edu/grants">
-                <img class="lazyload"
-                     width="75px"
-                     height="76px"
-                     src = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                     data-src="https://library.unt.edu/assets/images/branding/foundation-center.png"
-                     alt="Funding Information Network"></a>
-            <div class="media-body">The University Libraries are a
-              <a href="https://guides.library.unt.edu/grants"
-                 data-event-category="link - footer - text"
-                 data-event-action="libraries"
-                 data-event-label="https://guides.library.unt.edu/grants">Funding Information Network partner</a> of the Foundation Center.</div>
           </li>
         </ul>
       </div>
